@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
     <div class="image">
@@ -29,30 +30,30 @@
                     <div class="fields">
                         <div class="left-form">
                             <div class="field">
-                                <label for="first-name">First name</label>
-                                <input type="text" name="first-name">
+                                <label for="first-name">First name <strong>*</strong></label>
+                                <input type="text" name="first-name" id="first-name" placeholder="Joe" required>
                             </div>
                             <div class="field">
-                                <label for="mail">Email</label>
-                                <input type="email" name="mail">
+                                <label for="mail">Email <strong>*</strong></label>
+                                <input type="email" name="mail" id="mail" placeholder="joe@example.com" required>
                             </div>
                             <div class="field">
-                                <label for="password">Password</label>
-                                <input type="password" name="password">
+                                <label for="password">Password <strong>*</strong></label>
+                                <input type="password" name="password" id="password" required>
                             </div>
                         </div>
                         <div class="right-form">
                             <div class="field">
-                                <label for="last-name">Last name</label>
-                                <input type="text" name="last-name">
+                                <label for="last-name">Last name <strong>*</strong></label>
+                                <input type="text" name="last-name" id="last-name" placeholder="Milburn" required>
                             </div>
                             <div class="field">
-                                <label for="phone-number">Phone Number</label>
-                                <input type="text" name="phone-number">
+                                <label for="phone-number">Phone Number <strong>*</strong></label>
+                                <input type="text" name="phone-number" id="phone-number" pattern="(\d{2}[ ]?\d{4}[ ]?\d{4})" placeholder="0437 123 987" required>
                             </div>
                             <div class="field">
-                                <label for="confirm-password">Password</label>
-                                <input type="password" name="confirm-password">
+                                <label for="confirm-password">Confirm Password <strong>*</strong></label>
+                                <input type="password" name="confirm-password" id="confirm-password" required>
                             </div>
                         </div>
                     </div>

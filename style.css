@@ -103,15 +103,16 @@ form input {
 }
 
 form input:focus {
-    border: 2px solid red;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
-    background-color: rgba(0, 255, 0, 0.2);
-    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 }
 
 form input:invalid {
     border: 1px solid red;
     background-color: rgba(255, 0, 0, 0.4);
+}
+
+form input:valid{
+    background-color: rgba(0, 255, 0, 0.2);
 }
 
 .fields {
@@ -161,6 +162,14 @@ button:hover {
     text-decoration: none;
     color: #596D48;
     font-weight: bold;
+    position: absolute;
+    transition: font-size 0.2s ease;
+    left: calc(var(--image-width) + 17rem);
+}
+
+.right-side a:hover {
+    font-size: 1.2rem;
+    transition: font-size 0.2s ease;
 }
 
 
